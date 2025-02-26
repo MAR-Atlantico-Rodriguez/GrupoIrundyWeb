@@ -11,16 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('eventos', function (Blueprint $table) {
+        Schema::create('trackMusicas', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->string('descripcion');
-            $table->string('lugar_evento');
-            $table->string('long_lat');
-            $table->string('img_evento');
-            $table->date('fecha');
+            $table->string('track');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('eventos');
+        Schema::dropIfExists('trackMusicas');
     }
 };
