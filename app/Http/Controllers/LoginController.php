@@ -21,10 +21,10 @@ class LoginController extends Controller
         ]);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->route('admin/dashboard');
+            return redirect()->route('dashboard');
         }
 
-        return back()->withErrors(['email' => 'Credenciales incorrectas']);
+        return back()->withErrors(['msj' => 'Credenciales incorrectas']);
     }
 
 

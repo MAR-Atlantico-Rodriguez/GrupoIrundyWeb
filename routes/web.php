@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'login']);
 
-Route::post('/login', [LoginController::class, 'auth'])->name('login');
+Route::post('/auth', [LoginController::class, 'auth'])->name('auth');
 
 
 Route::get('/admin/dashboard', function () {

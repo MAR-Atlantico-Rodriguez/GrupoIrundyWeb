@@ -11,15 +11,17 @@
         <h2 class="text-2x1 font-bold mb-6 text-center">
             Iniciar Sesión
         </h2>
-        <form action="{{ route ('login') }}" method="post">
+
+        <!-- Formulario -->
+        <form action="{{ route ('auth') }}" method="post">
             @csrf
 
             <!-- Campo usuario -->
             <div class="mb-4">
-                <label for="username" class="block text-gray-700 text-sm font-bold mb-2">
-                    Nombre de Usuario
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+                    Email
                 </label>
-                <input type="text" id="username" name="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Nombre de usuario" required>
+                <input type="text" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Nombre de usuario" required>
             </div>
 
             <!-- Campo password -->
@@ -36,6 +38,13 @@
                     Iniciar Sesion
                 </button>
             </div>
+
+            <!-- Error -->
+            @error('msj')
+                <div class="bg-white text-red-700 py-2 px-4">
+                    {{ $message }}
+                </div>
+            @enderror
         </form>
     </div>
     
