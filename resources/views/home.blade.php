@@ -185,8 +185,8 @@
                     <div class="track__content nice-scroll">
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1"
-                                data-url="music-files/1.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1" data-url=""></div>
+
                             <div class="jp-audio jp_container_1" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -220,8 +220,8 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
-                                data-url="music-files/2.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2" data-url=""></div>
+
                             <div class="jp-audio jp_container_2" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -255,8 +255,8 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_3"
-                                data-url="music-files/3.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_3" data-url=""></div>
+
                             <div class="jp-audio jp_container_3" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -290,8 +290,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_4"
-                                data-url="music-files/4.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_4" data-url=""></div>
                             <div class="jp-audio jp_container_4" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -325,8 +324,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_5"
-                                data-url="music-files/5.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_5" data-url=""></div>
                             <div class="jp-audio jp_container_5" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -360,8 +358,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6"
-                                data-url="music-files/6.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6" data-url=""></div>
                             <div class="jp-audio jp_container_6" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
