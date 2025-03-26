@@ -9,14 +9,13 @@ Route::get('/', function () {
 });
 
 
-Route::get('/login', [LoginController::class, 'login']);
-
+Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/auth', [LoginController::class, 'auth'])->name('auth');
 
 
 //Rutas que se requieren ser Logueadas para verlas
 
-Route::prefix('admin')->middleware(['auth'])->name('admin')->group(function () {
+Route::prefix('admin')->middleware(['auth'])->group(function () {
     //Dashboard
     Route::get('/dashboard', function () { return view('admin.dashboard'); })->name('dashboard');
 
