@@ -94,7 +94,7 @@
                 data.forEach(e => {
                     html += `
                         <tr>
-                            <td class="px-2 py-1 text-center">
+                            <td class="px-2 py-1">
                                 ${e.img_evento ? `<img src="/storage/${e.img_evento}" class="h-16 rounded-md shadow-sm">` : ''}
                             </td>
                             <td class="px-2 py-1 text-center">${e.fecha}</td>
