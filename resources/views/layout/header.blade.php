@@ -19,7 +19,7 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="/">Inicio</a></li>                                
-                                <li><a href="/">Biografia</a></li>
+                                <li><a href="{{ url('/biogafia') }}">Biografia</a></li>
                                 <li><a href="/">Fotos</a></li>
                                 <li><a href="/">Videos</a></li>
                                 <!-- <li><a href="#">Pages</a>

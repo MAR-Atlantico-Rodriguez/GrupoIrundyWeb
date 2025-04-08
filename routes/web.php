@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/biografia', function () {
+    return view('biografia');
+});
+
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/auth', [LoginController::class, 'auth'])->name('auth');
@@ -22,6 +26,8 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     //Usuarios
     
     Route::get('/users', [UserController::class, 'users'])->name('users');
-    Route::post('/users', function () { return 'Usuarios';    })->name('addUser');
+    Route::post('/addUser', [UserController::class, 'store'])->name('addUser');
+    Route::put('/updateUser/{id}', [UserController::class, 'update'])->name('updateUser');
+    Route::delete('/deleteUser/{id}', [UserController::class, 'destroy'])->name('deleteUser');
 
 });
