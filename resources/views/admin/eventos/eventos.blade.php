@@ -12,7 +12,7 @@
     </div>
 
     <!-- Modal -->
-    <div id="modalEvento" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div id="modalEvento" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center  z-50">
         <div class="bg-white rounded-xl shadow-xl w-full max-w-2xl p-6 relative">
             <h2 class="text-xl font-bold mb-4" id="modalTitulo">Agregar Evento</h2>
 
@@ -119,10 +119,12 @@
 
         function mostrarModal() {
             $('#modalEvento').removeClass('hidden');
+            $('#modalEvento').addClass('flex');
         }
 
         function ocultarModal() {
             $('#modalEvento').addClass('hidden');
+            $('#modalEvento').removeClass('flex');
             resetForm();
         }
 
