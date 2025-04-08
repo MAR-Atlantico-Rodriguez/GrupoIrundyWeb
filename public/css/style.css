@@ -263,7 +263,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: rgba(42, 1, 74, 0.7);
+	background: rgba(0, 0, 0, 0.7);
 	/* position: absolute; */
 	position: fixed;
 	left: 0;
@@ -430,8 +430,8 @@ ol {
 }
 
 .hero__text .play-btn {
-	font-size: 26px;
-	color: #5c00ce;
+	font-size: 30px;
+	color: #30ce00;
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
@@ -565,7 +565,7 @@ ol {
 	font-size: 15px;
 	color: #ffffff;
 	display: inline-block;
-	background: #5c00ce;
+	background: #000;
 	padding: 12px 8px 9px 20px;
 }
 

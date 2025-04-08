@@ -109,8 +109,8 @@
                         </div>
                         <p>Irundy nació en la ciudad de Corrientes, y su estilo se caracteriza por su alegría y festividad. Son hijos de músicos consagrados y de gran respeto en el ámbito, quienes han sido una influencia fundamental en su desarrollo artístico. Sin lugar a dudas, transitan con profundo respeto y orgullo este camino musical, honrando sus raíces y tradiciones.</p>
                         <p>A lo largo de su carrera, han recorrido los festivales más relevantes de nuestra música, cautivando al público con su energía. Son capaces de hacer bailar, zapatear, gritar e incluso emocionar a quienes los esperan con ansias.</p>
-                        <p>Ellos son, sin lugar a dudas, ¡atención! LLEGA UN TSUNAMI ... EL TSUNAMI CHAMAMECERO - GRUPO IRUNDYYY</p>
-                        <!-- <a href="#" class="primary-btn">CONTACT ME</a> -->
+                        
+                        <a href="{{ url('/biogafia') }}" class="primary-btn">Conocernos Mas!</a>
                     </div>
                 </div>
             </div>
@@ -185,8 +185,8 @@
                     <div class="track__content nice-scroll">
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1"
-                                data-url="music-files/1.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1" data-url=""></div>
+
                             <div class="jp-audio jp_container_1" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -220,8 +220,8 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
-                                data-url="music-files/2.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2" data-url=""></div>
+
                             <div class="jp-audio jp_container_2" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -255,8 +255,8 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_3"
-                                data-url="music-files/3.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_3" data-url=""></div>
+
                             <div class="jp-audio jp_container_3" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -290,8 +290,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_4"
-                                data-url="music-files/4.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_4" data-url=""></div>
                             <div class="jp-audio jp_container_4" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -325,8 +324,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_5"
-                                data-url="music-files/5.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_5" data-url=""></div>
                             <div class="jp-audio jp_container_5" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->
@@ -360,8 +358,7 @@
                         </div>
                         <div class="single_player_container">
                             <h4>David Guetta Miami Ultra</h4>
-                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6"
-                                data-url="music-files/6.mp3"></div>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6" data-url=""></div>
                             <div class="jp-audio jp_container_6" role="application" aria-label="media player">
                                 <div class="jp-gui jp-interface">
                                     <!-- Player Controls -->

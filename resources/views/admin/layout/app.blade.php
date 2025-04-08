@@ -12,22 +12,22 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
-
+    {{-- <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> <!--Totally optional :) --> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="bg-gray-800 font-sans leading-normal tracking-normal mt-12">
 
 <header>
     <!--Nav-->
-    <nav aria-label="menu nav" class="bg-gray-800 pt-2 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
+    <nav aria-label="menu nav" class="bg-gray-800 pl-4 md:pt-0 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
 
         <div class="flex flex-wrap items-center">
             <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white">
                 <a href="/admin/dashboard" aria-label="Inicio">
                     <span class="text-xl pl-2">
-                        <img src="\img\MARCA_BLANCO_PNG.png" title="Inicio" width="60px">
+                        <img src="\img\MARCA_BLANCO_PNG.png" title="Inicio" width="100px">
                     </span>
                 </a>
             </div>
@@ -61,8 +61,8 @@
 
     <div class="flex flex-col md:flex-row">
         @include('admin.layout.nav')
-        <section>
-            <div id="main" class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
+        <section class="w-screen mr-5">
+            <div id="main" class="main-content flex-1 h-screen bg-gray-100 mt-12 md:mt-9 pb-2 md:pb-5">
 
                 <div class="bg-gray-800 pt-3">
                     <div class="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
@@ -77,6 +77,7 @@
 </main>
 
 
+@yield('scriptCustom')
 
 
 <script>
