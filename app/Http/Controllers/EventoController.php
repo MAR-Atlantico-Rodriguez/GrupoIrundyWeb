@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Evento;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 
 class EventoController extends Controller
 {
@@ -13,7 +14,11 @@ class EventoController extends Controller
     }
 
     public function allEventos(){
-        return response()->json(Evento::latest()->get());
+        $hoy = Carbon::today();
+        $eventos = Evento::where('fecha', '>=', $hoy)
+                     ->orderBy('fecha', 'asc')
+                     ->get();
+        return response()->json($eventos);
     }
 
     public function show($id)
