@@ -10,6 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grupo Irundy  -  El Tsunami Chamamecero</title>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcVeZ7UhhDoPoMZWIYc-6GCB6JoZ9OvBs&callback=initMap" async defer></script>
+
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -31,6 +34,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('img/favicon/site.webmanifest') }}">
+    
 </head>
 <body>
 
@@ -43,6 +47,8 @@
     <!-- Incluir el Footer -->
     @include('layout.footer')
 
+
+    @yield('scriptCustom')
 
     <!-- Js Plugins -->
     <script src="{{ asset('js/jquery-3.3.1.min.js')}}"></script>

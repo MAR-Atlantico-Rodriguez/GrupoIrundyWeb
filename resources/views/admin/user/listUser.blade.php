@@ -36,7 +36,7 @@
 
 
     <!-- Popup (Oculto por defecto) -->
-    <div id="userPopup" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+    <div id="userPopup" class="fixed inset-0 bg-gray-900 bg-opacity-50 items-center justify-center hidden">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 class="text-xl font-bold mb-4">Alta de Usuario</h2>
 
@@ -75,11 +75,13 @@
             // Abrir popup
             $("#openPopup").click(function() {
                 $("#userPopup").removeClass("hidden");
+                $("#userPopup").addClass("flex");
             });
 
             // Cerrar popup
             $("#closePopup").click(function() {
                 $("#userPopup").addClass("hidden");
+                $("#userPopup").removeClass("flex");
             });
 
             $.ajaxSetup({

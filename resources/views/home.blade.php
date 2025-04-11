@@ -34,61 +34,25 @@
             </div>
             <div class="row">
                 <div class="event__slider owl-carousel">
+                    @foreach ($eventos as $evento)
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="{{ asset('img/events/event-1')}}.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="{{ asset('storage/'.$evento->img_evento)}}">
                                 <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
+                                    <span>{{ \Carbon\Carbon::parse($evento->fecha)->translatedFormat('d M Y') }}</span>
                                 </div>
                             </div>
                             <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
+                                <h4 onclick="abrirModal({{ json_encode($evento) }})">{{ $evento->titulo }}</h4>
+                                <p><i class="fa fa-map-marker"></i> {{ $evento->lugar_evento }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="{{ asset('img/events/event-2')}}.jpg">
-                                <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="{{ asset('img/events/event-3')}}.jpg">
-                                <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="{{ asset('img/events/event-2')}}.jpg">
-                                <div class="tag-date">
-                                    <span>Dec 15, 2019</span>
-                                </div>
-                            </div>
-                            <div class="event__item__text">
-                                <h4>David Guetta Miami Ultra</h4>
-                                <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
+        @include('eventoPopUp')
     </section>
     <!-- Event Section End -->
 
